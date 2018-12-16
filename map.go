@@ -21,4 +21,9 @@ func main() {
 	for k, v := range m {
 		fmt.Println(k, v)
 	}
+
+	if v, ok := m["c"]; ok {
+		fmt.Printf("%q\n", v)
+	}
+
 }
