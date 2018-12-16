@@ -19,6 +19,6 @@ func swapString(first, second string) (string, string) {
 }
 
 func main() {
-	fmt.Println(combineString("Hello", "World", "Third"))
+	fmt.Println(combineString("Hello", "World", "Third", "4th"))
 	fmt.Println(swapString("A", "B"))
 }
