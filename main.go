@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 
-	"github.com/merxer/demo/bank"
 )
 
 func init() {
@@ -11,14 +10,11 @@ func init() {
 }
 
 func main() {
-	println("Hello, " + bank.Title, func() string {
-		return "KTB"
-	}())
 
 	counter := counterFactory()
-	fmt.Println(counter())
-	fmt.Println(counter())
-	fmt.Println(counter())
+	printCount(counter)
+	printCount(counter)
+	printCount(counter)
 }
 
 func init() {
@@ -31,4 +27,8 @@ func counterFactory() func() int {
 		i++
 		return i
 	}
+}
+
+func printCount(fn func() int ) {
+	fmt.Println(fn())
 }
