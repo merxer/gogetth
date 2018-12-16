@@ -11,7 +11,9 @@ func init() {
 }
 
 func main() {
-	println("Hello, " + bank.Title)
+	println("Hello, " + bank.Title, func() string {
+		return "KTB"
+	}())
 }
 
 func init() {
