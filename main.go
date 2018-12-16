@@ -13,3 +13,7 @@ func init() {
 func main() {
 	println("Hello, " + bank.Title)
 }
+
+func init() {
+	fmt.Println("Initial 2")
+}
